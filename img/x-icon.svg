@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="valign-middle absoluteCenter"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24">
+    <path
+        d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM17.7792 5.4L12.9708 10.9893L18.2001 18.6H14.354L10.8324 13.475L6.42347 18.6H5.28398L10.3266 12.7388L5.28398 5.4H9.13007L12.4647 10.2531L16.6397 5.4H17.7792ZM14.8901 17.7812H16.6403L8.58422 6.25779H6.83404L14.8901 17.7812Z">
+    </path>
+    <circle class="sb-icon-hover" cx="50%" cy="50%" fill="transparent" r="75%"></circle>
+</svg>

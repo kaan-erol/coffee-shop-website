@@ -1,0 +1,141 @@
+/* Container for all products, using a grid layout */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    transition: padding 0.5s ease;
+}
+
+/* Styling for individual product layout */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+}
+
+/* Styling for the left and right sections of a product */
+.product-left,
+.product-right {
+    width: 100%;
+}
+
+/* Ensure product images fit within their container */
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Styling for text in the right section with a white theme */
+.product-right-white div {
+    color: rgb(240, 240, 240);
+}
+
+/* Layout and styling for the right section of a product */
+.product-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 57, 50);
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+/* Styling for the product title */
+.product-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 16px;
+    width: 80%;
+    letter-spacing: 3px;
+}
+
+/* Styling for product description text */
+.product-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 16px;
+    width: 80%;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+}
+
+/* Container for product buttons */
+.product-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for all product buttons */
+.product-btn button {
+    place-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px;
+    background-color: transparent;
+    max-width: max-content;
+    padding: 5px 20px;
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
+}
+
+/* Styling for black-themed product buttons */
+.product-btn-black {
+    color: rgb(30, 57, 50);
+    border-color: rgb(30, 57, 50);
+}
+
+/* Styling for white-themed product buttons */
+.product-btn-white {
+    color: rgb(240, 240, 240);
+    border-color: rgb(240, 240, 240);
+}
+
+.product-btn-1:hover {
+    background-color: rgb(222, 103, 82);
+}
+
+.product-btn-2:hover {
+    background-color: rgb(73, 22, 47);
+}
+
+.product-btn-3:hover {
+    background-color: rgb(6, 184, 128);
+}
+
+/* Active effect for all buttons */
+.product-btn button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive styling for screens smaller than 900px */
+@media (max-width: 900px) {
+    .product {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+    .product-title {
+        font-size: 30px;
+    }
+    
+    .product-text {
+        font-size: 18px;
+    }
+
+    .product-btn button {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styling for screens smaller than 1500px */
+@media (max-width: 1500px) {
+    .product-container {
+        padding: 40px 0px;
+    }
+}

@@ -1,0 +1,145 @@
+/* Styling for the header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Flexbox layout for sections within the header */
+.left-section,
+.left-section-titles,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Add spacing between items in left and right sections */
+.left-section-titles>*,
+.right-section>* {
+    margin: 10px;
+}
+
+/* Add margin to left and right sections for spacing */
+.left-section,
+.right-section {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Styling for the company logo */
+.company-logo {
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Styling for the titles in the left section */
+.left-section-titles div {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+/* Hover effect for titles in the left section and 'Find a store' */
+.left-section-titles div:hover,
+.find-a-store:hover {
+    color: #ceb798;
+}
+
+/* Styling for the 'Find a store' section */
+.find-a-store {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* Add margin to the left of the 'Find a store' icon */
+.find-a-store svg {
+    margin-right: 6px;
+}
+
+/* Change the fill color of the 'Find a store' icon on hover */
+.find-a-store:hover path {
+    fill: #ceb798;
+}
+
+/* Styling for the 'Sign In' button */
+.sign-in-btn {
+    text-align: center;
+    font-weight: 500;
+    max-width: max-content;
+    padding: 7px 16px;
+    background-color: white;
+    color: black;
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
+}
+
+/* Hover effect for the 'Sign In' button */
+.sign-in-btn:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Click effect for the 'Sign In' button */
+.sign-in-btn:active {
+    transform: scale(0.95);
+}
+
+/* Styling for the 'Join Now' button */
+.join-now-btn {
+    text-align: center;
+    font-weight: 500;
+    max-width: max-content;
+    padding: 7px 16px;
+    background-color: black;
+    color: white;
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
+}
+
+/* Hover effect for the 'Join Now' button */
+.join-now-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Click effect for the 'Join Now' button */
+.join-now-btn:active {
+    transform: scale(0.95);
+}
+
+/* Styling for the hamburger menu (visible on smaller screens) */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Responsive styling for screens smaller than 850px */
+@media (max-width: 850px) {
+
+    /* Hide left-section titles and right-section on smaller screens */
+    .left-section-titles,
+    .right-section {
+        display: none;
+    }
+
+    /* Show the hamburger menu on smaller screens */
+    .hamburger-menu {
+        display: block;
+    }
+}
