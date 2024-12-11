@@ -76,7 +76,6 @@
     font-size: 16px;
     font-weight: 500;
     margin: 16px;
-    background-color: transparent;
     max-width: max-content;
     padding: 5px 20px;
     border-width: 1px;
@@ -98,16 +97,8 @@
     border-color: rgb(240, 240, 240);
 }
 
-.product-btn-1:hover {
-    background-color: rgb(222, 103, 82);
-}
-
-.product-btn-2:hover {
-    background-color: rgb(73, 22, 47);
-}
-
-.product-btn-3:hover {
-    background-color: rgb(6, 184, 128);
+.product-btn button:hover {
+    filter: brightness(0.9);
 }
 
 /* Active effect for all buttons */
