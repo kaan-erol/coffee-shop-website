@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         title: "It's a pumpkin party",
         text: "The season's favorite makes fall fall. Enjoy the moment—hot, iced or blended.",

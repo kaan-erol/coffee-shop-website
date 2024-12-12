@@ -1,3 +1,5 @@
+import {products} from "../scripts/products.js";
+
 // Calculating the brightness of color
 function getBrightness(rgb) {
     const [r, g, b] = rgb.match(/\d+/g).map(Number);
