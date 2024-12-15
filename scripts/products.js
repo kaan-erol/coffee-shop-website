@@ -1,3 +1,19 @@
+class Product {
+    title;
+    text;
+    button;
+    image;
+    backgroundColor;
+
+    constructor(productDetails) {
+        this.title = productDetails.title;
+        this.text = productDetails.text;
+        this.button = productDetails.button;
+        this.image = productDetails.image;
+        this.backgroundColor = productDetails.backgroundColor;
+    }
+}
+
 export const products = [
     {
         title: "It's a pumpkin party",
@@ -20,4 +36,6 @@ export const products = [
         image: "img/img3.jpg",
         backgroundColor: "rgb(6, 206, 141)"
     }
-];
+].map((productDetails) => {
+    return new Product(productDetails);
+});
