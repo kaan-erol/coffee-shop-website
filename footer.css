@@ -1,16 +1,15 @@
 /* Styling for the footer container */
 .footer {
-    margin: 0 40px 40px 40px;
+    margin: 0 40px 40px;
     border-top: 2px solid rgb(174, 174, 174);
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 40px;
 }
 
-/* Styling for all div elements inside the footer */
+/* General styling for div elements inside the footer */
 .footer div {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 /* Styling for 'About Us' and 'Follow Us' sections */
@@ -24,9 +23,9 @@
 .footer-text div {
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-/* Add underline effect on hover for footer text */
 .footer-text div:hover {
     text-decoration: underline;
 }
@@ -34,14 +33,12 @@
 /* Styling for social media icons in the 'Follow Us' section */
 .follow-us-icon img {
     width: 32px;
-    margin-right: 6px;
-    margin-bottom: 6px;
+    margin: 0 6px 6px 0;
     border-radius: 50%;
     cursor: pointer;
     transition: box-shadow 0.2s ease;
 }
 
-/* Add a shadow effect around social media icons on hover */
 .follow-us-icon img:hover {
     box-shadow: 0 0 0 8px rgb(230, 230, 230);
 }
