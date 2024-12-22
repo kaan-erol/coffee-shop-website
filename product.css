@@ -13,17 +13,25 @@
     margin-bottom: 25px;
 }
 
-/* Styling for the left and right sections of a product */
+/* Styling for left and right sections of a product */
 .product-left,
 .product-right {
     width: 100%;
 }
 
-/* Ensure product images fit within their container */
+/* Product image styling */
 .product img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.product-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 57, 50);
 }
 
 /* Styling for text in the right section with a white theme */
@@ -31,34 +39,23 @@
     color: rgb(240, 240, 240);
 }
 
-/* Layout and styling for the right section of a product */
-.product-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(30, 57, 50);
-    padding-top: auto;
-    padding-bottom: auto;
-}
-
-/* Styling for the product title */
-.product-title {
+/* Styling for text in the right section */
+.product-title,
+.product-text {
     text-align: center;
-    font-size: 46px;
-    font-weight: 700;
     margin: 16px;
     width: 80%;
+}
+
+.product-title {
+    font-size: 46px;
+    font-weight: 700;
     letter-spacing: 3px;
 }
 
-/* Styling for product description text */
 .product-text {
-    text-align: center;
     font-size: 22px;
     font-weight: 500;
-    margin: 16px;
-    width: 80%;
     letter-spacing: 1.5px;
     line-height: 32px;
 }
@@ -72,49 +69,45 @@
 
 /* Styling for all product buttons */
 .product-btn button {
-    place-items: center;
     font-size: 16px;
     font-weight: 500;
     margin: 16px;
-    max-width: max-content;
     padding: 5px 20px;
-    border-width: 1px;
+    border: 1px solid;
     border-radius: 15px;
-    border-style: solid;
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
 }
 
-/* Styling for black-themed product buttons */
 .product-btn-black {
     color: rgb(30, 57, 50);
     border-color: rgb(30, 57, 50);
 }
 
-/* Styling for white-themed product buttons */
 .product-btn-white {
     color: rgb(240, 240, 240);
     border-color: rgb(240, 240, 240);
 }
 
+/* Hover and active effects for buttons */
 .product-btn button:hover {
     filter: brightness(0.9);
 }
 
-/* Active effect for all buttons */
 .product-btn button:active {
     transform: scale(0.95);
 }
 
-/* Responsive styling for screens smaller than 900px */
+/* Responsive styling for smaller screens */
 @media (max-width: 900px) {
     .product {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-columns: 1fr;
     }
+
     .product-title {
         font-size: 30px;
     }
-    
+
     .product-text {
         font-size: 18px;
     }
@@ -124,9 +117,8 @@
     }
 }
 
-/* Responsive styling for screens smaller than 1500px */
 @media (max-width: 1500px) {
     .product-container {
-        padding: 40px 0px;
+        padding: 40px 0;
     }
 }
