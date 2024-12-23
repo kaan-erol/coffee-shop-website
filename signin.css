@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+.sign-in-header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Company logo styling */
+.company-logo {
+    width: 70px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+/* Form container styling */
+form {
+    text-align: center;
+    background: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Title styling */
+.title {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.input-box input {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 16px;
+    color: black;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+/* Remember me and forgot password section */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(30, 57, 50);
+}
+
+.forgot-password,
+.join-now {
+    color: rgb(0, 117, 74);
+    text-decoration: none;
+}
+
+.forgot-password {
+    margin-left: 20px;
+}
+
+.forgot-password:hover,
+.join-now:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    padding: 7px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 117, 74);
+    border-radius: 30px;
+    background-color: rgb(0, 117, 74);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
+}
+
+/* Register text styling */
+.register {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(30, 57, 50);
+}
