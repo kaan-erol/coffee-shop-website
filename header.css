@@ -7,6 +7,8 @@
     padding: 20px;
     font-size: 14px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+    position: relative;
 }
 
 /* Flexbox for sections within the header */
