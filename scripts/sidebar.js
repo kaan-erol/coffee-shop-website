@@ -2,7 +2,7 @@ function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('.overlay');
     const menuIcon = document.querySelector('#menu-icon');
-    const body = document.querySelector('.body');
+    const body = document.body;
 
     if (sidebar.classList.contains('show')) {
         sidebar.classList.remove('show');

@@ -3,3 +3,7 @@ body {
     margin: 0px;
     font-family: "Work Sans", sans-serif;
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
