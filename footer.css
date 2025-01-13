@@ -1,6 +1,6 @@
 /* Styling for the footer container */
 .footer {
-    margin: 0 40px 40px;
+    margin: 0 40px;
     border-top: 2px solid rgb(174, 174, 174);
     display: grid;
     grid-template-columns: auto 1fr;
@@ -41,4 +41,10 @@
 
 .follow-us-icon img:hover {
     box-shadow: 0 0 0 8px rgb(230, 230, 230);
+}
+
+.rights {
+    margin: 0 40px 40px;
+    font-size: 14px;
+    color: gray;
 }
