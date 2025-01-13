@@ -112,6 +112,14 @@ form {
     transition: background-color 0.15s, color 0.15s, transform 0.1s ease;
 }
 
+.button:hover {
+    filter: brightness(0.9);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
 /* Register text styling */
 .register {
     text-align: left;
