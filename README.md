@@ -4,6 +4,8 @@ A modern and responsive coffee shop website built using HTML, CSS, and JavaScrip
 ## About
 The website features a homepage and a sign in page. The homepage includes a header, a product showcase, and a footer. On smaller screens, the header titles transform into a hamburger menu, which opens a sidebar when clicked. The sign in page contains a registration screen and a footer. Both pages are fully optimized for mobile devices.
 
+[Visit the Coffee Shop Website](https://kaan-erol.github.io/coffee-shop-website/)
+
 ## Screenshots
 ### Homepage
 
